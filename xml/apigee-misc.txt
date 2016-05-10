@@ -1,0 +1,60 @@
+ZGAp6QBitYRL0o67Rtw5w9a1GoZz
+
+http://devamey-prod.apigee.net/notebook-service/books/book-id/pages/page-id/notes/
+
+context.proxyResponse.content
+
+
+5yiSbZApkQZ1XBkPhFjjEPfAvUXxtiCs
+
+
+gCifY4r5uh1YMKpm
+
+
+ public static final String OAUTH_URL = "https://devamey-prod.apigee.net/oauth/client_credential/accesstoken?";
+ public static final String CLIENT_ID = "5yiSbZApkQZ1XBkPhFjjEPfAvUXxtiCs";
+ public static final String CLIENT_SECRET = "gCifY4r5uh1YMKpm";
+
+  Original SyncUrl: http://ec2-54-227-246-87.compute-1.amazonaws.com:80/notebook-service
+	
+ccosSyncHost= "http://devamey-test.apigee.net/apigee-services"
+ccosSyncPort="80"
+ccosClientId="5yiSbZApkQZ1XBkPhFjjEPfAvUXxtiCs"
+ccosClientSecret="gCifY4r5uh1YMKpm"
+ccosOAuthUrl="https://devamey-prod.apigee.net/oauth/client_credential/accesstoken?"
+
+buildConfigField "String", "SYNC_HOST", ccosSyncHost
+buildConfigField "String", "SYNC_PORT", ccosSyncPort
+buildConfigField "String", "CLIENT_ID", ccosClientId
+buildConfigField "String", "CLIENT_SECRET", ccosClientSecret
+buildConfigField "String", "OAUTH_URL", ccosOAuthUrl
+
+
+Post request body
+{"docs":[
+{
+"_id":"mEsAy_A_dtqHBMQTdPtwixzNmXs=POST",
+"httpMethod":"POST",
+"lastUpdated":1461664102192,
+"mimeType":"application/json",
+"requestBody":{
+  "autoSave": false,
+  "content": "Page 2 Note2 26 Apr.",
+  "contentType": "p",
+  "promptId": ""
+},
+"requestUrl":"http://nightly-nbdemoapp.elasticbeanstalk.com/api/v1/notebook/books/51cdb07a-2925-450c-98ec-f822c91bbf86/pages/8c70d26d-ac54-4e35-9158-397f73255f46/notes/",
+"syncStatus":"SYNC_PENDING",
+"type":"REQUEST",
+"userId":"OFFLINE-USER"
+}]}
+
+http://www.couchbase.com/autodocs/couchbase-lite-android-1.0b2/com/couchbase/lite/replicator/Replication.html 
+http://www.couchbase.com/autodocs/couchbase-lite-android-1.0b2/com/couchbase/lite/replicator/Replication.html
+getHeaders() 
+
+service = new OfflineRestClientImpl(database, userId, BuildConfig.SYNC_HOST, 
+                    BuildConfig.SYNC_PORT, "");
+					
+FOR GET = yKeg81YLXQKqBTp2tg2A0IDYfbo=GET
+FOR POST = aMWQ0tONQVxKFIGt4KwAUiL70TA=POST
